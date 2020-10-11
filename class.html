@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties-innerHTML and className</title>
+</head>
+<style>
+  .Ourdiv{
+    width:100px;
+    height:100px;
+    background:red;
+  }
+  .Ourdiv1{
+    width:100px;
+    height:100px;
+    background:navy;
+  }
+</style>
+<body>
+  <div id="myDiv" class="Ourdiv">This is a Div</div>
+  <button onclick="changeData()" value="submit">Change Text</button>
+
+
+  <script>
+    function changeData(){
+    
+
+document.getElementById('myDiv').className= "Ourdiv1";
+    }
+   
+  </script>
+
+</body>
+</html>

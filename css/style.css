@@ -1,6 +1,6 @@
 .btn-primary{
   background: #313464;
-  border-color:#313464;
+  border-color:#868deb;
 }
 .jumbotron{
   background: url('../images/bg.jpg') -400px -200px;
@@ -19,19 +19,19 @@
   margin-bottom:30px;
 }
 
-.navbar{
+.navbar.navbar-inverse{
   background:#333;
   color:#fff;
   margin:0;
 
 }
 
-.navbar a{
+.navbar.navbar.navbar-inverse a{
   color:#fff;
 margin-bottom: 3px;
 }
 
-.navbar a:hover{
+.navbar.navbar-inverse a:hover{
   background:none !important;
   border-bottom:3px solid #fff;
   margin-bottom:0;

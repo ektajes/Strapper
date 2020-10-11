@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax Project</title>
+</head>
+<body>
+  <h1 id="medix"> This is a doc</h1>
+  <button onclick="newText()" value="submit">Button</button>
+
+  <script>
+    function newText(){
+      var xhttp =new XMLHttpRequest();
+      xhttp.onreadystatechange= function(){
+        if(xhttp.readyState == 4 && xhttp.status == 200 ){
+          document.getElementById('medix').innerHTML= xhttp.responseText;
+
+        }
+      }
+      xhttp.open('GET', 'docu.txt', true);
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>

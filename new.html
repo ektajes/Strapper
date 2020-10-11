@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function</title>
+</head>
+<body>
+  
+  <button onclick="changeText()" value="submit">Send</button>
+  <p id="ptext">We change this.</p>
+
+  
+  <script>
+   function changeText(){
+      var ptexti= document.getElementById('ptext');
+      ptexti.innerHTML='This is new text.';
+    }
+  </script>
+
+</body>
+</html>

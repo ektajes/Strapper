@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classname</title>
+  <style>
+    .divone{
+      width:100px;
+      height:100px;
+      background: tan;
+    }
+    .divtwo{
+      width:100px;
+      height:100px;
+      background:gray;
+    }
+  </style>
+</head>
+<body>
+  <p>we want to see effect of property className</p>
+  <button value="submit" onclick="propClass()">Try it</button>
+  <div id="myDiv" class="divone">
+    This is a div element.
+
+    <script>
+   function propClass(){
+     document.getElementById('myDiv').className="divtwo";
+   }
+    </script>
+  </div>
+</body>
+</body>
+</html>
